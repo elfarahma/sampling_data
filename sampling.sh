@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -r ./data
+
 # download data cuaca ke dalam folder data
 
 wget -P data https://github.com/labusiam/dataset/raw/main/weather_data.xlsx
