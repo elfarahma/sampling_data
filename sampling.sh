@@ -28,7 +28,7 @@ fi
 FILE_SLICE_1=/home/elfarahma/sampling_data/data/weather_2014.csv
 FILE_SLICE_2=/home/elfarahma/sampling_data/data/weather_2015.csv
 
-if [ -f "$FILE_SLICE_1" && -f "$FILE_SLICE_2" ]; then
+if [ -f "$FILE_SLICE_1" ] && [ -f "$FILE_SLICE_2" ]; then
 
 	csvstack weather_2014.csv weather_2015.csv >> weather.csv
 
